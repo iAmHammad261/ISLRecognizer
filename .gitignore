@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+*.env
+
+# Model checkpoints (can be large and are usually generated)
+best_checkpoint.pth
+
+# Potentially other large data files if they are generated or downloaded
+# For example, if your Data_Pipeline downloads raw data you might ignore it here.
+
+# Docker - if you build images locally and don't want to track them
+# (though Dockerfile and .dockerignore are usually committed)
+# If you have local Docker image tarballs or something similar, add them here.
+
+# IDE / Editor specific files (though none are visible, it's good practice)
+.vscode/
+.idea/
+*.swp
+*~

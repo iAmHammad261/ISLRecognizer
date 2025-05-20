@@ -1,0 +1,49 @@
+# .dockerignore (place in SIGNLANGUAGEAPI/ directory)
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environment folder
+venv/
+env/
+.venv/
+
+# IDE and OS specific
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Git specific
+.git/
+.gitignore
+
+# Local development files
+.env
+*.log
+*.tmp
+*.bak
+*.sqlite3
+*.db
+
+# Test outputs or large datasets not needed in the final image
+# (Uncomment and add specific paths if you have them)
+# /Testing/outputs/
+# /Videos/ # If your videos are only for local testing and not needed in the container
+# /Model Pipeline/ # If this contains intermediate files not needed for runtime
+
+# Docker files themselves (they are used to build, not needed inside)
+Dockerfile
+.dockerignore
+
+# Requirements file (copied separately, no need to copy it again with source code)
+# requirements.txt # Usually copied explicitly in Dockerfile, so can be ignored here
+
+# Any other specific files or directories to exclude
+# For example, if you have large data files for local testing:
+# large_test_data/
